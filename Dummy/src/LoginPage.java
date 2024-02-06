@@ -76,7 +76,7 @@ public class LoginPage  extends JFrame implements ActionListener{
             passField.setText(" Jaldi Wha se Hato");
         }else if (ae.getSource()== signIn){
             String userName = userField.getText();
-            String password = passField.getPassword().toString();
+      String password = new String(passField.getPassword());
             if( userName.equals("")){
                 JOptionPane.showMessageDialog(null ,"Enter the userName");
             }
